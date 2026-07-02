@@ -1,0 +1,42 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f7f5f2;
+  --foreground: #1b1b1b;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Premium-Klasse */
+.glass-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(27, 27, 27, 0.03);
+}
+
+/* Luxuriöser Text-Farbverlauf für Headlines */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #1b1b1b 0%, #a89276 50%, #1b1b1b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Smooth Scroll Optimierung */
+html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  scroll-behavior: contain;
+}
